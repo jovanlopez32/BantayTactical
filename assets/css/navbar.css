@@ -3,12 +3,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0px 100px;
+    padding: 20px 140px;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     align-items: center;
     z-index: 1;
-    transition: 0.3s;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 header .logo {
@@ -19,7 +19,7 @@ header .logo {
     text-align: center;
     transition: 0.5s;
 
-    margin: 0 50px;
+    margin: 0 70px;
 }
 
 header .logo:hover {
@@ -39,7 +39,7 @@ header .navbar li {
 
 header .navbar li a {
     text-decoration: none;
-    color: #353535;
+    color: #FFF;
     transition: 0.5s;
 }
 
@@ -54,14 +54,48 @@ header .search-navbar {
     margin: 0 10px;
 }
 
+header .search-navbar button {
+    display: flex;
+    padding: 4px 10px;
+    position: relative;
+    left: -37px;
+    border: none;
+    background-color: #1B1B19;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+header .search-navbar button:hover {
+    background-color: #EFA021;
+}
+
+header .search-navbar .bi {
+    font-size: 15px;
+}
+
 header .search-navbar input {
-    width: 100%;
+    width: 70%;
     align-self: center;
     justify-self: center;
+    padding: 5px;
+
+
+    box-sizing: border-box;
+
+    border: 3px solid #1B1B19;
+    border-radius: 5px;
+    outline: none;
+
+    transition: all 0.5s;
+}
+
+header .search-navbar input:focus {
+    border: 3px solid #EFA021;
 }
 
 .bi {
     font-size: 30px;
+    color: #FFF;
 }
 
 .menuToggle {
@@ -69,13 +103,20 @@ header .search-navbar input {
 }
 
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
 
     header {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
         padding: 10px 40px;
     }
 
     header .navbar {
+        display: none;
+    }
+
+    header .search-navbar {
         display: none;
     }
 
@@ -100,6 +141,7 @@ header .search-navbar input {
 
     header .navbar li a {
         font-size: 1.6em;
+        color: #1B1B19;
     }
 
     .menuToggle {
