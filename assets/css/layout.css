@@ -5,6 +5,208 @@
 }
 
 body {
-    height: 200vh;
+    min-height: 100vh;
     width: 100%;
+    color: #1B1B19;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    margin: 20px 0px;
+}
+
+.banner-inicio {
+    height: 400px;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+
+
+.banner-inicio .background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 27, 25, 0.65);
+}
+
+.banner-inicio .background>div:first-child {
+    opacity: 0%;
+    transform: translateX(-200px);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.banner-inicio .background>div:last-child {
+    opacity: 0%;
+    transform: translateX(200px);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.banner-inicio .bg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+    gap: 2rem;
+    align-content: center;
+    justify-items: center;
+    text-align: left;
+    padding: 0px 150px;
+    color: #FFF;
+}
+
+.banner-inicio button {
+    display: inline-flex;
+    font-weight: 600;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #1B1B19;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 10px;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.banner-inicio button i {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.banner-inicio button:hover {
+    background-color: #EFA021;
+    color: #1B1B19;
+}
+
+.contenido {
+    margin: 100px 140px;
+}
+
+.contenido .centro {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido .card-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+    gap: 2rem;
+}
+
+.card-2 div:last-child {
+    align-self: center;
+}
+
+.card-2 button {
+    display: inline-flex;
+    font-weight: 600;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #1B1B19;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 10px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-2 button i {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.card-2 button:hover {
+    background-color: #EFA021;
+    color: #1B1B19;
+}
+
+.contenido .card-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+    gap: 7rem;
+    justify-items: center;
+}
+
+/* ANIMACION DE TARJETAS */
+
+.contenido .card-3 .card-productos {
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    padding: 80px;
+    background-color: #EFA021;
+}
+
+.contenido .card-3 .card-productos .card-productos-contenido {
+
+    transform: translateY(100px);
+    color: rgba(255, 255, 255, 0);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contenido .card-3 .card-productos a {
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0);
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+/*--------------------------------*/
+
+
+
+
+/* .banner-inicio .bg>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20%;
+
+    text-align: center;
+    color: #FFF;
+}
+
+.banner-inicio .bg>div h1 {
+    margin: 20px 0;
+}
+
+.tres-productos {
+    background-color: #EFA021;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    align-content: center;
+    padding: 30px 15px;
+}
+
+.content .producto {
+    height: 250px;
+    margin: 10px;
+    background-color: #1B1B19;
+    background-image: url(../img/bota.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+@media screen and (max-width: 1200px) {
+    .banner-inicio {
+        margin-top: 78px;
+    }
+
+    .banner-inicio .bg {
+        padding: 0 50px;
+    }
+
+    .banner-inicio .bg div:last-child {
+        display: none;
+    }
 }

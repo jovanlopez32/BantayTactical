@@ -93,12 +93,12 @@ header .search-navbar input:focus {
     border: 3px solid #EFA021;
 }
 
-.bi {
+header .bi {
     font-size: 30px;
     color: #FFF;
 }
 
-.menuToggle {
+.menutoggle {
     display: none;
 }
 
@@ -110,6 +110,10 @@ header .search-navbar input:focus {
         display: flex;
         justify-content: space-between;
         padding: 10px 40px;
+    }
+
+    header .logo {
+        margin-left: 0px;
     }
 
     header .navbar {
@@ -144,7 +148,7 @@ header .search-navbar input:focus {
         color: #1B1B19;
     }
 
-    .menuToggle {
+    .menutoggle {
         display: block;
     }
 

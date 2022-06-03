@@ -16,21 +16,21 @@
 
 function toggleMenu(){
     
-    const menu = document.querySelector('.menuToggle');
+    const menu = document.querySelector('.menutoggle');
     const menuOptions = document.querySelector('.navbar');
     menu.classList.toggle('active');
     menuOptions.classList.toggle('active');
 
     console.log(menu.classList.value);
 
-    if(menu.classList.value == 'menuToggle active'){
-        const menuToggle = document.querySelector('.bi-list');
-        menuToggle.classList.remove('bi-list');
-        menuToggle.classList.add('bi-x-lg');
+    if(menu.classList.value == 'menutoggle active'){
+        const menutoggle = document.querySelector('.bi-list');
+        menutoggle.classList.remove('bi-list');
+        menutoggle.classList.add('bi-x-lg');
     }else{
-        const menuToggle = document.querySelector('.bi-x-lg');
-        menuToggle.classList.remove('bi-x-lg');
-        menuToggle.classList.add('bi-list');
+        const menutoggle = document.querySelector('.bi-x-lg');
+        menutoggle.classList.remove('bi-x-lg');
+        menutoggle.classList.add('bi-list');
     }
     
 }
