@@ -18,16 +18,19 @@ a {
     margin: 20px 0px;
 }
 
+p {
+    line-height: 30px;
+    word-spacing: 3px;
+}
+
 .banner-inicio {
-    height: 400px;
+    height: 500px;
     background: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     width: 100%;
 }
-
-
 
 .banner-inicio .background {
     width: 100%;
@@ -82,7 +85,7 @@ a {
 }
 
 .contenido {
-    margin: 100px 140px;
+    margin: 50px 140px;
 }
 
 .contenido .centro {
@@ -128,7 +131,7 @@ a {
 .contenido .card-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
-    gap: 7rem;
+    gap: 5rem;
     justify-items: center;
 }
 
@@ -138,8 +141,10 @@ a {
     border-radius: 10px;
     text-align: center;
     margin: 20px;
-    padding: 80px;
-    background-color: #EFA021;
+    padding: 40px 50px;
+    background: url(../img/dos.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .contenido .card-3 .card-productos .card-productos-contenido {
@@ -154,6 +159,16 @@ a {
     color: rgba(255, 255, 255, 0);
     transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
+}
+
+.nuestras-marcas img {
+
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nuestras-marcas img:hover {
+    transform: scale(120%);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /*--------------------------------*/
@@ -209,4 +224,9 @@ a {
     .banner-inicio .bg div:last-child {
         display: none;
     }
+
+    .contenido {
+        margin: 100px 60px;
+    }
+
 }

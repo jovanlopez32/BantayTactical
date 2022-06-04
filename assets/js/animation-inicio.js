@@ -51,16 +51,7 @@ if (screen.width > 1024) {
     })
 
 
-}else {
-    var content = document.querySelector('.card-productos-contenido')
-    var content_a = document.querySelector('.card-productos-contenido>a')
-
-    content.style.color = "rgba(255, 255, 255, 1)"
-    content.style.transform = "translateY(0px)"
-
-    content_a.style.color = "rgba(255, 255, 255, 1)"
 }
-
 
 
 /* cardContenido.forEach(function(element2) {
