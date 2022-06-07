@@ -68,54 +68,24 @@ h1:hover::after {
     margin: 0px 0px;
 }
 
-.mapa-boton div {
-    display: flex;
-    flex-direction: row;
-}
-
-.mapa-boton img {
-    height: 50px;
-}
-
-.mapa-boton a {
-    display: flex;
-    text-decoration: none;
-}
-
-.mapa-boton button {
-    background-color: #EFA021;
-    font-weight: 800;
-    cursor: pointer;
-    width: 70%;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: #FFF;
-    border: solid 3px #EFA021;
-    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.mapa-boton button:hover {
-    border: solid 3px #EFA021;
-    color: #EFA021;
-    background-color: #FFF;
-}
-
-.imagenes-sucursal {
+.content .media {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.imagenes-sucursal img {
-    width: 350px;
-    margin: 20px 0px;
-    border-radius: 5px;
-    cursor: crosshair;
+.content .media i {
+    font-size: 2.5rem;
+    color: #1B1B19;
+    margin: 20px;
+    padding: 10px 15px;
+    border: solid 4px #1B1B19;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.imagenes-sucursal img:hover {
-    transform: scale(150%);
+.content .media i:hover {
+    color: #EFA021;
+    border: solid 4px #EFA021;
 }
 
 
@@ -133,11 +103,4 @@ h1:hover::after {
 
 
 
-}
-
-@media screen and (max-width: 820px) {
-
-    iframe {
-        width: 100%;
-    }
 }
