@@ -20,20 +20,20 @@
         <header>
             <ul class="navbar">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="index.php">Inicio</a>
                 </li>
                 <li>
-                    <a href="pages/productos.html">Productos</a>
+                    <a href="pages/productos.php">Productos</a>
                 </li>
                 <li>
-                    <a href="pages/nosotros.html">Nosotros</a>
+                    <a href="pages/nosotros.php">Nosotros</a>
                 </li>
                 <li>
-                    <a href="pages/sucursales.html">Sucursales</a>
+                    <a href="pages/sucursales.php">Sucursales</a>
                 </li>
             </ul>
 
-            <a href="#" class="logo"><img src="assets/img/logo.png" alt="" height="50"></a>
+            <a href="index.php" class="logo"><img src="assets/img/logo.png" alt="" height="50"></a>
 
 
             <!-- Searcha NavBar -->
@@ -53,7 +53,7 @@
                 <div>
                     <h1>NUESTRO PRODUCTO MAS  VENDIDO</h1>
                     <p>Camisa elaborada con dos tipos de telas, 50% algodón 50% nilón, principalmente esta camisa está pensada para dar mayor confort y frescura al usuario...</p>
-                    <a href="pages/productos.html"><button>Ver Producto <i class="bi bi-arrow-right-short"></i></button></a> 
+                    <a href="pages/productos.php"><button>Ver Producto <i class="bi bi-arrow-right-short"></i></button></a> 
                 </div>
                 <div style="text-align: center;">
                     <img src="assets/img/Productos/camisa-duo.png" width="180px" alt="">
@@ -70,7 +70,7 @@
                         <div class="card-productos-contenido">
                             <h2>Camisa Duo</h2>
                             <p>Camisa elaborada con dos tipos de telas, 50% algodón 50% nilón</p>
-                            <a href="pages/productos.html"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                            <a href="pages/productos.php"><i class="bi bi-arrow-up-circle-fill"></i></a>
                         </div> 
                 </div>
 
@@ -78,7 +78,7 @@
                     <div class="card-productos-contenido">
                         <h2>Pantalon CS40</h2>
                         <p>Pantalón diseñado para las fuerzas del orden, cuenta con las especificaciones de diseño</p>
-                        <a href="pages/productos.html"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                        <a href="pages/productos.php"><i class="bi bi-arrow-up-circle-fill"></i></a>
                     </div> 
                 </div>
 
@@ -86,7 +86,7 @@
                     <div class="card-productos-contenido">
                         <h2>Mochila Modular</h2>
                         <p>Bolsa principal de 20 litros aproximadamente, dos bolsas al frente</p>
-                        <a href="pages/productos.html"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                        <a href="pages/productos.php"><i class="bi bi-arrow-up-circle-fill"></i></a>
                     </div> 
                 </div>
 
@@ -112,7 +112,7 @@
                 <div>
                     <h1>Nuestras Sucursales</h1>
                     <p>Estamos presentes en nuestras dos sucurasales dentro de San Luis Potosi, haz click en el boton para conocer nuestro horario de atención.</p>
-                    <a href="pages/sucursales.html"><button>Ver Sucursales <i class="bi bi-arrow-right-short"></i></button></a> 
+                    <a href="pages/sucursales.php"><button>Ver Sucursales <i class="bi bi-arrow-right-short"></i></button></a> 
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
         <footer>
             <div class="content">
               <div class="left box">
-                <a href="#" class="logo"><img src="assets/img/logo.png" alt="" height="50"></a>
+                <a href="index.php" class="logo"><img src="assets/img/logo.png" alt="" height="50"></a>
                 <div class="upper">
                     <p>BANTAY TACTICAL es una empresa socialmente responsable y se enorgullece de cumplir
                     con las normas de calidad mexicanas . Escuchamos las necesidades de nuestros clientes

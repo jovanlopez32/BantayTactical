@@ -19,20 +19,20 @@
     <header>
         <ul class="navbar">
             <li>
-                <a href="../index.html">Inicio</a>
+                <a href="../index.php">Inicio</a>
             </li>
             <li>
-                <a href="productos.html">Productos</a>
+                <a href="productos.php">Productos</a>
             </li>
             <li>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="nosotros.php">Nosotros</a>
             </li>
             <li>
-                <a href="sucursales.html">Sucursales</a>
+                <a href="sucursales.php">Sucursales</a>
             </li>
         </ul>
 
-        <a href="#" class="logo"><img src="../assets/img/logo.png" alt="" height="50"></a>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo.png" alt="" height="50"></a>
         
         
         <div class="menutoggle">
@@ -112,7 +112,7 @@
     <footer>
         <div class="content">
           <div class="left box">
-            <a href="#" class="logo"><img src="../assets/img/logo.png" alt="" height="50"></a>
+            <a href="../index.php" class="logo"><img src="../assets/img/logo.png" alt="" height="50"></a>
             <div class="upper">
               <p>BANTAY TACTICAL es una empresa socialmente responsable y se enorgullece de cumplir
 con las normas de calidad mexicanas . Escuchamos las necesidades de nuestros clientes
