@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +10,8 @@ body {
     min-height: 100vh;
     width: 100%;
     color: #1B1B19;
+    font-family: 'Montserrat', sans-serif;
 }
-
 
 h1,
 h2,
@@ -36,7 +38,7 @@ h1::after {
     width: calc(300%/5);
     height: 5px;
     background-color: #EFA021;
-    top: 100%;
+    top: 110%;
     left: 0em;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -48,6 +50,7 @@ h1::after {
     background-position: center;
     background-attachment: fixed;
     width: 100%;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .banner-inicio .background {
@@ -108,7 +111,7 @@ h1::after {
 
 .contenido .centro {
     display: flex;
-    text-align: center;
+    text-align: left;
     align-items: center;
     justify-content: center;
 }
@@ -160,7 +163,22 @@ h1::after {
     text-align: center;
     margin: 20px;
     padding: 40px 50px;
+}
+
+.contenido .card-3 .card-productos:first-child {
     background: url(../img/dos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .card-3 .card-productos:nth-child(2) {
+    background: url(../img/uno.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .card-3 .card-productos:last-child {
+    background: url(../img/tres.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -179,6 +197,10 @@ h1::after {
 
 }
 
+.nuestras-marcas {
+    margin-top: 25px;
+}
+
 .nuestras-marcas img {
 
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -188,47 +210,6 @@ h1::after {
     transform: scale(120%);
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-/*--------------------------------*/
-
-
-
-
-/* .banner-inicio .bg>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20%;
-
-    text-align: center;
-    color: #FFF;
-}
-
-.banner-inicio .bg>div h1 {
-    margin: 20px 0;
-}
-
-.tres-productos {
-    background-color: #EFA021;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
-    align-content: center;
-    padding: 30px 15px;
-}
-
-.content .producto {
-    height: 250px;
-    margin: 10px;
-    background-color: #1B1B19;
-    background-image: url(../img/bota.jpg);
-    background-size: cover;
-    background-position: center;
-} */
 
 @media screen and (max-width: 1200px) {
     .banner-inicio {
@@ -244,7 +225,21 @@ h1::after {
     }
 
     .contenido {
-        margin: 100px 60px;
+        margin: 50px 40px;
+    }
+
+    .contenido .card-3 .card-productos .card-productos-contenido {
+
+        transform: translateY(0px) !important;
+        color: rgba(255, 255, 255, 1) !important;
+        transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .contenido .card-3 .card-productos a {
+        font-size: 35px;
+        color: rgba(255, 255, 255, 1) !important;
+        transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
     }
 
 }
