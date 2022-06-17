@@ -84,6 +84,15 @@ h1:hover::after {
     background-color: #EFA021;
 }
 
+.content-img img{
+    transform: scale(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.content-img:hover img{
+    transform: scale(180%);
+}
+
 .estrella {
     font-size: 3em;
     position: relative;
