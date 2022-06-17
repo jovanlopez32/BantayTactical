@@ -85,8 +85,16 @@ h1:hover::after {
     text-decoration: none;
 }
 
+.mapa-boton button i {
+    font-size: 1.8em;
+    margin-left: 30px;
+}
+
 .mapa-boton button {
-    background-color: #EFA021;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1B19;
     font-weight: 800;
     cursor: pointer;
     width: 70%;
@@ -94,14 +102,15 @@ h1:hover::after {
     border-radius: 5px;
     padding: 10px;
     color: #FFF;
-    border: solid 3px #EFA021;
+    border: solid 3px #1B1B19;
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .mapa-boton button:hover {
     border: solid 3px #EFA021;
-    color: #EFA021;
-    background-color: #FFF;
+    color: #FFF;
+    background-color: #EFA021;
+    transform: translateX(20px);
 }
 
 .imagenes-sucursal {
@@ -115,6 +124,7 @@ h1:hover::after {
     margin: 20px 0px;
     border-radius: 5px;
     cursor: crosshair;
+    transition: all 0.5s ease-in-out;
 }
 
 .imagenes-sucursal img:hover {
