@@ -15,7 +15,6 @@
         <link rel="icon" href="assets/img/favicon.png">
     </head>
     <body>
-
         <!-- Menu de navegacion -->
         <header>
             <ul class="navbar">
@@ -48,18 +47,94 @@
             </div>
         </header>
 
-        <div class="banner-inicio">
-            <div class="background bg">
-                <div>
-                    <h1>NUESTRO PRODUCTO MAS  VENDIDO</h1>
-                    <p>Camisa elaborada con dos tipos de telas, 50% algodón 50% nilón, principalmente esta camisa está pensada para dar mayor confort y frescura al usuario...</p>
-                    <a href="pages/productos.php"><button>Ver Producto <i class="bi bi-arrow-right-short"></i></button></a> 
+
+        <div class="wrapper">
+        <div class="background">
+            <div class="slider-wrap">
+            
+               
+                
+                <ul class="slider">  
+               
+
+                    <li data-color="#1abc9c">
+                        <div class="background bg">
+                            <div>
+                                <h1>NUESTRO PRODUCTO MAS  VENDIDO</h1>
+                                <p>Camisa elaborada con dos tipos de telas, 50% algodón 50% nilón, principalmente esta camisa está pensada para dar mayor confort y frescura al usuario...</p>
+                                <a href="pages/productos.php"><button>Ver Producto <i class="bi bi-arrow-right-short"></i></button></a> 
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="assets/img/Productos/camisa-duo2.png" width="180px" alt="">
+                                <h3>Camisa Duo</h3>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-color="#3498db">
+                        <div class="background bg">
+                            <div>
+                                <h1>BANTAY TACTICAL</h1>
+                                <p>Somos proveedores de<b>la MEJOR ropa y equipo de seguridad</b>
+                                    del mercado teniendo a disposición un amplio catálogo de productos innovadores
+                                    siempre con alto estándar de calidad en cada uno de ellos y al precio más
+                                    competitivo.</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="assets/img/aguila.png" width="200px" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-color="#9b59b6">
+                        <div class="background bg">
+                            <div>
+                                <h1>SOMOS PROVEDORES</h1>
+                                <p>Proveemos los uniformes oficiales de la Guardia Civil Estatal del estado de San Luis Potosi. Asi como los parches, equipamento, entre otros productos oficiales.</p>
+                                <img src="assets/img/parches-1.png" height="100px" style="margin-right:40px;" alt="">
+                                <!-- <img src="assets/img/parches-2.png" height="140px" style="margin-right:40px;" alt=""> -->
+                                <img src="assets/img/parches-3.png" height="100px" style="margin-right:40px;" alt="">
+                                <img src="assets/img/parches-4.png" height="100px" style="margin-right:40px;" alt="">
+                                <!-- <img src="assets/img/parches-5.png" height="140px" style="margin-right:40px;" alt=""> -->
+                            </div>
+
+                            <div style="text-align: center;">
+                                <img src="assets/img/uniformecivil.jpg" width="520px"  alt="">
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-color="#34495e">
+                        <div class="background bg">
+                            <div>
+                                <h1>GRAN COMFORT</h1>
+                                <p>Nuestros productos estan diseñados para que sea cómodo el día entero, permita moverse con libertad y con una estética pulida.</p>
+                                <a href="pages/productos.php"><button>Ver Productos <i class="bi bi-arrow-right-short"></i></button></a> 
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="assets/img/imagen-banner.jpg" width="350px" alt="">
+                                <h3>DEPORTES EXTREMOS</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                </ul>
+                <!--controls-->
+                <div class="btns next"><i class="bi bi-arrow-right"></i></div>
+                <div class="btns previous"><i class="bi bi-arrow-left"></i></div>
+                
+                <div class="pagination-wrap">
+                    <ul>
+                    </ul>
                 </div>
-                <div style="text-align: center;">
-                    <img src="assets/img/Productos/camisa-duo.png" width="180px" alt="">
-                    <h3>Camisa Duo</h3>
-                </div>
+                <!--controls--> 
+            </div> 
+                 
             </div>
+        
+  
         </div>
 
         <div class="contenido">

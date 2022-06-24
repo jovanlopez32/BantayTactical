@@ -50,8 +50,11 @@
         <div>
             <h3>Dirección:</h3>
             <p>Av Nereo Rodríguez Barragán 850, Col del Valle 1ra Secc, 78200 San Luis, S.L.P.</p>
-            <h3>Horario:</h3>
-            <p>9:00 AM - 22:00 PM</p>
+            <h2>Horario:</h2>
+            <h3>Lunes a Viernes</h3>
+            <p>09:00 AM - 19:00 PM</p>
+            <h3>Sabado</h3>
+            <p>09:00 AM - 16:00 PM</p>
         </div>
     </div>
 
@@ -72,8 +75,11 @@
         <div>
             <h3>Dirección:</h3>
             <p>Calle Emiliano Zapata 265, Centro Historico, 78000 San Luis, S.L.P.</p>
-            <h3>Horario:</h3>
-            <p>9:00 AM - 21:00 PM</p>
+            <h2>Horario:</h2>
+            <h3>Lunes a Viernes</h3>
+            <p>09:00 AM - 19:00 PM</p>
+            <h3>Sabado</h3>
+            <p>09:00 AM - 16:00 PM</p>
         </div>
     </div>
 

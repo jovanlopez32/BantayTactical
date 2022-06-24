@@ -1,48 +1,90 @@
 
+var pos = 0
 
-var psn = 0;
+var totalSlides = document.querySelectorAll('.slider-wrap ul li')
 
-window.addEventListener('load', function(){
+var sliderWidth = 100
 
-    var bannerLeft = document.querySelector('.background > div:first-child');
-    var bannerRight = document.querySelector('.background > div:last-child');
+console.log(totalSlides.length)
+	
+var ulslider = document.querySelector('.slider-wrap ul.slider')
 
-    bannerLeft.style.transform = "translateX(0px)"
-    bannerRight.style.transform = "translateX(0px)"
-    bannerLeft.style.opacity = "100%"
-    bannerRight.style.opacity = "100%"
-
-
-    var changeImage = 0;
-
-    changeImage = setInterval(funcionConRetraso, 3000);
+ulslider.style.width = (sliderWidth * totalSlides.length) + 'vw'
 
 
-});
+//next slide
+document.querySelector('.next').addEventListener('click', slideRight)
 
-function funcionConRetraso() {
+//previous slide
+document.querySelector('.previous').addEventListener('click', slideLeft)
 
-    psn++;
+//automatic slider
+var autoSlider = setInterval(slideRight, 3000)
 
-    if(psn > 3)
-        psn = 1
+
+document.querySelectorAll('.slider-wrap ul li').forEach(function(element){
     
-    var backgroundImage = document.querySelector('.banner-inicio');
+    var li = document.createElement('li')
+    document.querySelector('.pagination-wrap ul').append(li)
 
-    var urlImage = "url(assets/img/" + "banner-" + psn + ".jpg)"
+})
+
+pagination()
+
+
+document.querySelector('.slider-wrap').addEventListener('mouseover', function(){
+
+    this.classList.add('active')
+    clearInterval(autoSlider)
     
-    //backgroundImage.style.background = "url(assets/img/dos.jpg)";
+})
 
-    backgroundImage.style.background = urlImage;
-    backgroundImage.style.backgroundSize = "cover";
-    backgroundImage.style.backgroundPosition = "center";
-    backgroundImage.style.backgroundAttachment = "fixed";
+document.querySelector('.slider-wrap').addEventListener('mouseleave', function(){
+    this.classList.remove('active')
+    autoSlider = setInterval(slideRight, 3000)
+})
 
-    console.log(psn)
 
+function slideLeft(){
     
+    pos--
+    if(pos == -1){
+        pos = totalSlides.length - 1
+    }
+
+    ulslider.style.left = (-sliderWidth*pos) + 'vw'
+
+    pagination()
 }
 
+function slideRight(){
+    
+    pos++
+    if(pos == totalSlides.length ){
+        pos = 0
+    }
+
+    ulslider.style.left = (-sliderWidth*pos) + 'vw'
+
+    pagination()
+}
+
+function pagination(){
+
+
+   
+    document.querySelectorAll('.pagination-wrap ul li').forEach(function(element){
+        element.classList.remove('active')
+    })
+
+    document.querySelector('.pagination-wrap ul li:nth-child('+(pos+1)+')').classList.add('active')
+    
+    document.querySelector('.slider-wrap ul.slider li:nth-child('+(pos+1)+')').style.background = 'url(assets/img/banner-'+(pos+1)+'.webp)'
+    document.querySelector('.slider-wrap ul.slider li:nth-child('+(pos+1)+')').style.backgroundPosition = 'center'
+    document.querySelector('.slider-wrap ul.slider li:nth-child('+(pos+1)+')').style.backgroundSize = 'cover'
+    document.querySelector('.slider-wrap ul.slider li:nth-child('+(pos+1)+')').style.backgroundAttachment = 'fixed'
+    
+}
 
 
 
@@ -79,51 +121,3 @@ function funcionConRetraso() {
         }, true);
         
     })
-
-
-
-/* cardContenido.forEach(function(element2) {
-
-    cardProductos.forEach(function(element) {
-        element.addEventListener("mouseover", function(event) {
-    
-    
-           
-            
-            element2.style.transform = "translateY(0px)"
-            element2.style.color = "rgba(255, 255, 255, 1)"
-        
-        
-    
-            cardContenidoa = document.querySelector('.card-productos-contenido>a')
-            cardContenidoa.style.color = "rgba(255, 255, 255, 1)" 
-    
-        }, true);
-    });
-
-    
-
-}); */
-
- 
-
-
-
-
-
-
-/* cardProductos.addEventListener("mouseover", function() {
-
-    
-
-        cardContenido = document.querySelector('.card-productos-contenido')
-        cardContenido.style.transform = "translateY(0px)"
-        cardContenido.style.color = "rgba(255, 255, 255, 1)"
-        
-    
-    
-
-    cardContenidoa = document.querySelector('.card-productos-contenido>a')
-    cardContenidoa.style.color = "rgba(255, 255, 255, 1)"
-
-}, false); */
